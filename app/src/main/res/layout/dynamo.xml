@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nestedLayout"
+    android:layout_width="wrap_content"
+    android:background="@color/black"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <RelativeLayout
+        android:id="@+id/nene"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curved_boarder"
+        android:layout_marginTop="20dp"
+        android:padding="20dp">
+        <TextView
+            android:id="@+id/Eventname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Name"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/startt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start time"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_below="@id/Eventname"
+            />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            />
+
+        <TextView
+            android:id="@+id/stopt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Eventname"
+            android:textColor="@color/black"
+            android:layout_marginLeft="61dp"
+            android:layout_marginTop="-2dp"
+            android:layout_toRightOf="@id/startt1"
+            android:text="stop time"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/starttime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8:10"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/startt1"
+            />
+
+        <TextView
+            android:id="@+id/stoptime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stopt1"
+            android:layout_marginLeft="126dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@id/starttime1"
+            android:text="9:10"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/switch1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="86dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/nene"
+        android:layout_marginTop="10dp"
+        android:background="@color/black" />
+
+
+
+    <!-- Other views and components -->
+
+
+</RelativeLayout>
